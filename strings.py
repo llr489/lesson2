@@ -1,5 +1,11 @@
-string1 = input("Введите строку 1: ")
-string2 = input("Введите строку 2: ")
+string1 = 'somestring'
+string2 = 'otherstring'
+string3 = '4symstring'
+string4 = 'learn'
+integer = 3
+decimal = 1.0
+
+
 
 def string_compare(string1, string2):
     if type(string1) == str and type(string2) == str:
@@ -13,4 +19,13 @@ def string_compare(string1, string2):
     else:
         return 0
 
+print(string_compare(string1, string1))
+print(string_compare(string3, string3))
 print(string_compare(string1, string2))
+print(string_compare(string1, string3))
+print(string_compare(string1, string4))
+print(string_compare(string2, string3))
+print(string_compare(string2, string4))
+print(string_compare(string3, string4))
+print(string_compare(string1, integer))
+print(string_compare(decimal, string2))
