@@ -6,7 +6,6 @@ integer = 3
 decimal = 1.0
 
 
-
 def string_compare(string1, string2):
     if type(string1) == str and type(string2) == str:
         if string1 == string2:
