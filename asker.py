@@ -3,13 +3,16 @@ def ask_user():
     
     while True:
 
-        user_input = input("Поговори со мной: ").lower()
-
-        if user_input in dict:
-            print(dict[user_input])
-            if user_input == "пока":
-                break
-        else:
-            print("Не знаю что и сказать!")
+        try:
+            user_input = input("Поговори со мной: \n").lower()
+            if user_input in dict:
+                print(dict[user_input])
+                if user_input == "пока":
+                    break
+            else:
+                print("Не знаю что и сказать!")
+        except KeyboardInterrupt:
+            print("Жаль, что ты уходишь")
+            break
 
 ask_user()
