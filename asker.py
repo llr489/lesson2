@@ -9,5 +9,7 @@ def ask_user():
             print(dict[user_input])
             if user_input == "пока":
                 break
+        else:
+            print("Не знаю что и сказать!")
 
 ask_user()
