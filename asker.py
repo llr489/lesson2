@@ -15,4 +15,5 @@ def ask_user():
             print("Жаль, что ты уходишь")
             break
 
-ask_user()
+if __name__ == "__main__"
+    ask_user()
